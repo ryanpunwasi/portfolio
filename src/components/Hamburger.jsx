@@ -9,11 +9,16 @@ function Hamburger(props) {
   };
 
   return (
-    <div className="hamburger" onClick={toggle}>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <>
+      {!open && (
+        <div className="hamburger" onClick={toggle}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      )}
+      {open && "X"}
+    </>
   );
 }
 
