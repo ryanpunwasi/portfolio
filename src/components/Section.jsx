@@ -1,5 +1,7 @@
+import styles from "./Section.module.css";
+
 function Section(props) {
-  return props.children;
+  return <div className={styles.section}>{props.children}</div>;
 }
 
 export default Section;

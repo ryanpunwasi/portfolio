@@ -1,7 +1,12 @@
+import Hamburger from "./Hamburger";
+
+import "./Nav.css";
 function Nav(props) {
   return (
-    <nav>
-      <a href="https://google.ca">link</a>
+    <nav className="nav">
+      <div className="nav__item">
+        <Hamburger />
+      </div>
     </nav>
   );
 }
