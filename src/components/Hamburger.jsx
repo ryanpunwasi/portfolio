@@ -10,14 +10,11 @@ function Hamburger(props) {
 
   return (
     <>
-      {!open && (
-        <div className="hamburger" onClick={toggle}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      )}
-      {open && "X"}
+      <div className={`hamburger ${open ? "open" : "closed"}`} onClick={toggle}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </>
   );
 }

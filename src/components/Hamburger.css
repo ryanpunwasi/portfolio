@@ -1,17 +1,49 @@
-.hamburger {
+div.hamburger {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.8em;
   width: 30px;
+  gap: 5px;
+  margin-left: 40px;
 }
 
-.hamburger:hover {
+div.hamburger:hover {
   cursor: pointer;
 }
 
 .hamburger > div {
   background-color: black;
   width: 100%;
+  height: 3px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -moz-border-bottom-colors: 0;
+}
+
+div.hamburger.open div:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(45deg) translateY(11px);
+}
+
+div.hamburger.open div:nth-child(2) {
+  opacity: 0;
+  bottom: -60px;
+}
+
+div.hamburger.open div:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-45deg) translateY(-11px);
 }
