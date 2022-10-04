@@ -1,11 +1,9 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: right;
-  padding: 1em;
+  justify-content: flex-end;
+  padding: 2em;
   width: 100vw;
   position: fixed;
-}
-
-.nav__item {
+  background-color: transparent;
 }

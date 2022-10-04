@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Hamburger.css";
 
-function Hamburger(props) {
+function Hamburger() {
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
@@ -9,13 +9,11 @@ function Hamburger(props) {
   };
 
   return (
-    <>
-      <div className={`hamburger ${open ? "open" : "closed"}`} onClick={toggle}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </>
+    <div className={`hamburger ${open ? "open" : "closed"}`} onClick={toggle}>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   );
 }
 

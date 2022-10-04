@@ -4,9 +4,7 @@ import "./Nav.css";
 function Nav(props) {
   return (
     <nav className="nav">
-      <div className="nav__item">
-        <Hamburger />
-      </div>
+      <Hamburger />
     </nav>
   );
 }
