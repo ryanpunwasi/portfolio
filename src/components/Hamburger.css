@@ -5,7 +5,6 @@ div.hamburger {
   align-items: center;
   width: 30px;
   gap: 5px;
-  margin-left: 40px;
 }
 
 div.hamburger:hover {
