@@ -1,7 +1,7 @@
 import "./SidebarItem.css";
 
 function SidebarItem(props) {
-  return <div className="sidebar__item"></div>;
+  return <li className="sidebar__item">{props.item.title}</li>;
 }
 
 export default SidebarItem;

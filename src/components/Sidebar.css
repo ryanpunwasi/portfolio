@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  background-color: black;
+  height: calc(80vh - 100px);
+  width: 20vw;
+  top: 100px;
+  right: 30px;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.sidebar.open {
+  opacity: 1;
+  animation: fadeIn 0.2s;
+}
+
+.sidebar.closed {
+  right: 0px;
+  opacity: 0;
+  transition: right 0.2s ease-in-out opacity 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    right: 15px;
+  }
+  100% {
+    opacity: 1;
+    right: 30px;
+  }
+}
