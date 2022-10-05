@@ -2,6 +2,7 @@ import { useState } from "react";
 import Nav from "./Nav";
 import Section from "./Section";
 import Sidebar from "./Sidebar";
+import Lead from "./Lead";
 import "./App.css";
 
 const sections = [
@@ -19,7 +20,9 @@ function App() {
     <>
       <Nav isOpen={sidebarOpen} toggle={toggleSidebar} />
       <Sidebar items={sections} isOpen={sidebarOpen} />
-      <Section></Section>
+      <Section>
+        <Lead />
+      </Section>
     </>
   );
 }
