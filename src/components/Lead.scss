@@ -1,0 +1,36 @@
+.lead {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.lead__text {
+  font-size: 2em;
+}
+
+.scrolling-words-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.scrolling-words-box {
+  height: 3rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.scrolling-words-box ul {
+  margin: 0rem 0.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    transform: translateY(2rem);
+  }
+}
