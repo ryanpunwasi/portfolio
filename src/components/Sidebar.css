@@ -19,7 +19,7 @@
 .sidebar.closed {
   right: 0px;
   opacity: 0;
-  transition: right 0.2s ease-in-out opacity 0.3s ease-in-out;
+  animation: fadeOut 0.2s;
 }
 
 @keyframes fadeIn {
@@ -30,5 +30,16 @@
   100% {
     opacity: 1;
     right: 30px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    right: 30px;
+  }
+  100% {
+    opacity: 0;
+    right: 15px;
   }
 }
