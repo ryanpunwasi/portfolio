@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SidebarContext } from "../contexts/SidebarContext";
 import Nav from "./Nav";
 import Section from "./Section";
 import Sidebar from "./Sidebar";
@@ -12,14 +13,18 @@ const sections = [
 ];
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(null);
+
   const toggleSidebar = () => {
     setSidebarOpen(prev => !prev);
   };
+
   return (
     <>
-      <Nav isOpen={sidebarOpen} toggle={toggleSidebar} />
-      <Sidebar items={sections} isOpen={sidebarOpen} />
+      <SidebarContext.Provider value={{ sidebarOpen, toggleSidebar }}>
+        <Nav />
+        <Sidebar items={sections} />
+      </SidebarContext.Provider>
       <Section>
         <Lead />
       </Section>
