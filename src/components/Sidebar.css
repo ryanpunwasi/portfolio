@@ -11,6 +11,10 @@
   box-shadow: 10px 10px 8px #888888;
 }
 
+.none {
+  display: none;
+}
+
 .sidebar.open {
   opacity: 1;
   animation: fadeIn 0.2s;
