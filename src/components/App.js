@@ -25,9 +25,10 @@ function App() {
         <Nav />
         <Sidebar items={sections} />
       </SidebarContext.Provider>
-      <Section>
+      <Section image="/img/02.jpeg">
         <Lead />
       </Section>
+      <Section />
     </>
   );
 }
