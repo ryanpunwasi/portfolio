@@ -8,11 +8,9 @@ const Lead = function (props) {
       <div className="scrolling-words-container">
         <div className="scrolling-words-box">
           <ul>
-            <li>web development</li>
-            <li>photography</li>
+            <li>software</li>
             <li>film</li>
-            <li>basketball</li>
-            <li>football</li>
+            <li>sports</li>
           </ul>
         </div>
       </div>
