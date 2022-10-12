@@ -8,8 +8,9 @@ import "./App.css";
 
 const sections = [
   { title: "About", link: "#about" },
+  { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
-  { title: "Photography", link: "#photography" },
+  { title: "Contact", link: "#contact" },
 ];
 
 function App() {
@@ -25,10 +26,13 @@ function App() {
         <Nav />
         <Sidebar items={sections} />
       </SidebarContext.Provider>
-      <Section image="/img/02.jpeg">
+      <Section image="/img/03.jpg">
         <Lead />
       </Section>
-      <Section />
+      <Section image="/img/02.jpeg" id="about" />
+      <Section image="/img/03.jpg" id="skills" />
+      <Section image="/img/02.jpeg" id="projects" />
+      <Section image="/img/03.jpg" id="contact" />
     </>
   );
 }
