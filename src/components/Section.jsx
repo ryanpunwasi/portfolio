@@ -10,6 +10,7 @@ function Section(props) {
           backgroundBlendMode: "multiply",
         }}
         className={styles.section}
+        id={props.id}
       >
         {props.children}
       </div>
