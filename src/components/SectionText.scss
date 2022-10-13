@@ -1,0 +1,14 @@
+.section__text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+}
+
+.section__text {
+  font-family: "Barlow";
+  width: 50%;
+  line-height: 1.5em;
+  text-align: center;
+}
