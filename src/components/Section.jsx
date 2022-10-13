@@ -3,7 +3,7 @@ import styles from "./Section.module.css";
 function Section(props) {
   if (props.image) {
     return (
-      <div
+      <section
         style={{
           backgroundImage: `url('${props.image}')`,
           backgroundSize: "100% 100%",
@@ -13,10 +13,14 @@ function Section(props) {
         id={props.id}
       >
         {props.children}
-      </div>
+      </section>
     );
   }
-  return <div className={styles.section}>{props.children}</div>;
+  return (
+    <div id={props.id} className={styles.section}>
+      {props.children}
+    </div>
+  );
 }
 
 export default Section;
