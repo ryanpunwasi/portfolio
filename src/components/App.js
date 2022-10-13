@@ -2,9 +2,12 @@ import { useState } from "react";
 import { SidebarContext } from "../contexts/SidebarContext";
 import Nav from "./Nav";
 import Section from "./Section";
+import SectionText from "./SectionText";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
 import "./App.css";
+
+import { about } from "../docs/about";
 
 const sections = [
   { title: "About", link: "#about" },
@@ -29,10 +32,13 @@ function App() {
       <Section image="/img/03.jpg">
         <Lead />
       </Section>
-      <Section image="/img/02.jpeg" id="about" />
-      <Section image="/img/03.jpg" id="skills" />
-      <Section image="/img/02.jpeg" id="projects" />
-      <Section image="/img/03.jpg" id="contact" />
+      <Section id="about">
+        <SectionText text={about}></SectionText>
+      </Section>
+      <Section image="/img/02.jpeg" id="sunsetImage" />
+      <Section id="skills" />
+      <Section id="projects" />
+      <Section id="contact" />
     </>
   );
 }
