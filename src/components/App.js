@@ -5,6 +5,7 @@ import Section from "./Section";
 import SectionText from "./SectionText";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
+import ContactSection from "./ContactSection";
 import "./App.css";
 
 import { about } from "../docs/about";
@@ -38,7 +39,9 @@ function App() {
       <Section image="/img/02.jpeg" id="sunsetImage" />
       <Section id="skills" />
       <Section id="projects" />
-      <Section id="contact" />
+      <Section id="contact">
+        <ContactSection />
+      </Section>
     </>
   );
 }
