@@ -8,8 +8,6 @@ import Lead from "./Lead";
 import ContactSection from "./ContactSection";
 import "./App.css";
 
-import { about } from "../docs/about";
-
 const sections = [
   { title: "About", link: "#about" },
   { title: "Skills", link: "#skills" },
@@ -34,12 +32,11 @@ function App() {
         <Lead />
       </Section>
       <Section id="about">
-        <SectionText text={about}></SectionText>
+        <SectionText></SectionText>
       </Section>
-      <Section image="/img/02.jpeg" id="sunsetImage" />
       <Section id="skills" />
+      <Section image="/img/02.jpeg" id="sunsetImage" />
       <Section id="projects" />
-      <Section image="/img/01.jpg" />
       <Section id="contact">
         <ContactSection />
       </Section>
