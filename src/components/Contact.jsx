@@ -3,9 +3,23 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <div className="contact__icons">
-      <img src="/img/linkedin.png" alt="" />
-      <img src="/img/github.png" alt="" />
-      <img src="/img/twitter.png" alt="" />
+      <a
+        href="https://www.linkedin.com/in/ryan-punwasi/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="/img/linkedin.png" alt="linkedin" />
+      </a>
+      <a href="https://github.com/ryanpunwasi" target="_blank" rel="noreferrer">
+        <img src="/img/github.png" alt="github" />
+      </a>
+      <a
+        href="https:www.twitter.com/RyanPunwasi"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="/img/twitter.png" alt="twitter" />
+      </a>
     </div>
   );
 };

@@ -39,6 +39,7 @@ function App() {
       <Section image="/img/02.jpeg" id="sunsetImage" />
       <Section id="skills" />
       <Section id="projects" />
+      <Section image="/img/01.jpg" />
       <Section id="contact">
         <ContactSection />
       </Section>
