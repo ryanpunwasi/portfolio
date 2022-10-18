@@ -5,11 +5,13 @@ import Section from "./Section";
 import SectionText from "./SectionText";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
+import Skills from "./Skills";
 import ContactSection from "./ContactSection";
 import "./App.css";
 
 const sections = [
   { title: "About", link: "#about" },
+  { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];
@@ -33,8 +35,11 @@ function App() {
       <Section id="about">
         <SectionText></SectionText>
       </Section>
-      <Section id="projects" />
+      <Section id="skills">
+        <Skills />
+      </Section>
       <Section image="/img/02.jpeg" id="sunsetImage" blendMode="normal" />
+      <Section id="projects" />
       <Section id="contact">
         <ContactSection />
       </Section>

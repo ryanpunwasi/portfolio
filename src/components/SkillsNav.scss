@@ -1,0 +1,23 @@
+.skills__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.skills__name {
+  text-transform: capitalize;
+  font-size: 2em;
+  width: 400px;
+  text-align: center;
+}
+
+.skills__arrow {
+  font-size: 3em;
+  user-select: none;
+}
+
+.skills__arrow:hover {
+  cursor: pointer;
+}
