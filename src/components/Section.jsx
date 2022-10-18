@@ -7,7 +7,7 @@ function Section(props) {
         style={{
           backgroundImage: `url('${props.image}')`,
           backgroundSize: "100% 100%",
-          backgroundBlendMode: "multiply",
+          backgroundBlendMode: `${props.blendMode || "multiply"}`,
         }}
         className={styles.section}
         id={props.id}

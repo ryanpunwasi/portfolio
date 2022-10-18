@@ -10,7 +10,6 @@ import "./App.css";
 
 const sections = [
   { title: "About", link: "#about" },
-  { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];
@@ -34,9 +33,8 @@ function App() {
       <Section id="about">
         <SectionText></SectionText>
       </Section>
-      <Section id="skills" />
-      <Section image="/img/02.jpeg" id="sunsetImage" />
       <Section id="projects" />
+      <Section image="/img/02.jpeg" id="sunsetImage" blendMode="normal" />
       <Section id="contact">
         <ContactSection />
       </Section>
