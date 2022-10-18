@@ -31,7 +31,7 @@ const SectionText = function ({ text }) {
         nursing, which has fostered my sense of resilience and problem-solving.
         Over time, my interest in programming grew and I decided to pivot into
         the software industry. I have experience working on small projects, both
-        as an individual and with a team. I hope to leverage my insight and
+        as an individual and with others. I hope to leverage my insight and
         skills to join a team and build software that is impactful!
         <br />
         <br />
