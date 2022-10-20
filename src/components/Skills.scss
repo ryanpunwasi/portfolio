@@ -10,10 +10,22 @@
   padding: 1em;
 }
 
+.skills__header {
+  text-align: center;
+  font-size: 2vw;
+}
+
 .skills__section > div {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 90vw;
   gap: 2em;
+}
+
+.skills__section > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5em;
+  width: 25%;
 }

@@ -1,6 +1,4 @@
-import { useState } from "react";
 import SkillsChips from "./SkillsChips";
-import SkillsNav from "./SkillsNav";
 
 import "./Skills.scss";
 
@@ -17,6 +15,7 @@ const sectionsObj = {
     languages: [
       "HTML5",
       "CSS3",
+      "SASS",
       "Javascript",
       "Typescript",
       "Ruby",
@@ -33,41 +32,33 @@ const sectionsObj = {
       "Express",
       "EJS",
       "jQuery",
-      "SASS",
-      "Bootstrap 5",
+      "Bootstrap",
       "Rails",
     ],
   },
   2: { databases: ["PostgreSQL", "MySQL"] },
-  3: { "version control": ["Git"] },
-  4: { testing: ["Mocha", "Chai", "Storybook", "Cypress", "Rspec"] },
+  3: { testing: ["Mocha", "Chai", "Jest", "Rspec", "Storybook", "Cypress"] },
 };
 
 const Skills = () => {
-  const [selected, setSelected] = useState(0);
-
-  const nextSection = () => {
-    setSelected(prev => (prev + 1) % sections.length);
-  };
-
-  const previousSection = () => {
-    setSelected(prev => (prev + sections.length - 1) % sections.length);
-  };
-
   return (
     <div className="skills__section">
       <div>
         <div>
-          <SkillsChips />
+          <p className="skills__header">Languages</p>
+          <SkillsChips skills={sectionsObj[0].languages} />
         </div>
         <div>
-          <SkillsChips />
+          <p className="skills__header">Frameworks/Libraries</p>
+          <SkillsChips skills={sectionsObj[1].frameworks} />
         </div>
         <div>
-          <SkillsChips />
+          <p className="skills__header">Databases</p>
+          <SkillsChips skills={sectionsObj[2].databases} />
         </div>
         <div>
-          <SkillsChips />
+          <p className="skills__header">Testing</p>
+          <SkillsChips skills={sectionsObj[3].testing} />
         </div>
       </div>
     </div>
