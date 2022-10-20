@@ -2,14 +2,6 @@ import SkillsChips from "./SkillsChips";
 
 import "./Skills.scss";
 
-const sections = [
-  "languages",
-  "frameworks/libraries",
-  "databases",
-  "version control",
-  "testing",
-];
-
 const sectionsObj = {
   0: {
     languages: [
