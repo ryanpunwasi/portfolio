@@ -4,5 +4,16 @@
   height: 100vh;
   font-family: "Barlow";
   display: flex;
+  gap: 1em;
   justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.skills__section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  gap: 2em;
 }

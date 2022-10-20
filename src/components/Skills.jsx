@@ -56,12 +56,20 @@ const Skills = () => {
 
   return (
     <div className="skills__section">
-      <SkillsNav
-        selected={sections[selected]}
-        next={nextSection}
-        previous={previousSection}
-      />
-      {/* <SkillsChips /> */}
+      <div>
+        <div>
+          <SkillsChips />
+        </div>
+        <div>
+          <SkillsChips />
+        </div>
+        <div>
+          <SkillsChips />
+        </div>
+        <div>
+          <SkillsChips />
+        </div>
+      </div>
     </div>
   );
 };
