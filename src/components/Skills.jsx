@@ -1,22 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SkillsChips from "./SkillsChips";
-import SkillsNav from "./SkillsNav";
 
 import "./Skills.scss";
-
-const sections = [
-  "languages",
-  "frameworks/libraries",
-  "databases",
-  "version control",
-  "testing",
-];
 
 const sectionsObj = {
   0: {
     languages: [
       "HTML5",
       "CSS3",
+      "SASS",
       "Javascript",
       "Typescript",
       "Ruby",
@@ -33,35 +25,56 @@ const sectionsObj = {
       "Express",
       "EJS",
       "jQuery",
-      "SASS",
-      "Bootstrap 5",
+      "Bootstrap",
       "Rails",
     ],
   },
   2: { databases: ["PostgreSQL", "MySQL"] },
-  3: { "version control": ["Git"] },
-  4: { testing: ["Mocha", "Chai", "Storybook", "Cypress", "Rspec"] },
+  3: { testing: ["Mocha", "Chai", "Jest", "Rspec", "Storybook", "Cypress"] },
 };
 
 const Skills = () => {
-  const [selected, setSelected] = useState(0);
+  const [show, setShow] = useState(false);
 
-  const nextSection = () => {
-    setSelected(prev => (prev + 1) % sections.length);
-  };
+  useEffect(() => {
+    let targets = document.querySelectorAll(".skill");
 
-  const previousSection = () => {
-    setSelected(prev => (prev + sections.length - 1) % sections.length);
-  };
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setShow(true);
+          }
+        });
+      },
+      {
+        threshold: 0.8,
+      }
+    );
+
+    targets.forEach(target => observer.observe(target));
+  });
 
   return (
     <div className="skills__section">
-      <SkillsNav
-        selected={sections[selected]}
-        next={nextSection}
-        previous={previousSection}
-      />
-      {/* <SkillsChips /> */}
+      <div>
+        <div className={`skill ${show ? "show" : ""}`}>
+          <p className="skills__header">Languages</p>
+          <SkillsChips skills={sectionsObj[0].languages} />
+        </div>
+        <div className={`skill ${show ? "show" : ""}`}>
+          <p className="skills__header">Frameworks/Libraries</p>
+          <SkillsChips skills={sectionsObj[1].frameworks} />
+        </div>
+        <div className={`skill ${show ? "show" : ""}`}>
+          <p className="skills__header">Databases</p>
+          <SkillsChips skills={sectionsObj[2].databases} />
+        </div>
+        <div className={`skill ${show ? "show" : ""}`}>
+          <p className="skills__header">Testing</p>
+          <SkillsChips skills={sectionsObj[3].testing} />
+        </div>
+      </div>
     </div>
   );
 };
