@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./SectionText.scss";
-const SectionText = function ({ text }) {
+const SectionText = function () {
   const [show, setShow] = useState(false);
   useEffect(() => {
     let targets = document.querySelectorAll(".section__text");
