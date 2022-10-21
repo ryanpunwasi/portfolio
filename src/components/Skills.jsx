@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import SkillsChips from "./SkillsChips";
 
 import "./Skills.scss";
@@ -33,22 +34,43 @@ const sectionsObj = {
 };
 
 const Skills = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    let targets = document.querySelectorAll(".skill");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setShow(true);
+          }
+        });
+      },
+      {
+        threshold: 0.8,
+      }
+    );
+
+    targets.forEach(target => observer.observe(target));
+  });
+
   return (
     <div className="skills__section">
       <div>
-        <div>
+        <div className={`skill ${show ? "show" : ""}`}>
           <p className="skills__header">Languages</p>
           <SkillsChips skills={sectionsObj[0].languages} />
         </div>
-        <div>
+        <div className={`skill ${show ? "show" : ""}`}>
           <p className="skills__header">Frameworks/Libraries</p>
           <SkillsChips skills={sectionsObj[1].frameworks} />
         </div>
-        <div>
+        <div className={`skill ${show ? "show" : ""}`}>
           <p className="skills__header">Databases</p>
           <SkillsChips skills={sectionsObj[2].databases} />
         </div>
-        <div>
+        <div className={`skill ${show ? "show" : ""}`}>
           <p className="skills__header">Testing</p>
           <SkillsChips skills={sectionsObj[3].testing} />
         </div>

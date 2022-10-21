@@ -25,7 +25,18 @@
 .skills__section > div > div {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-start;
   gap: 5em;
   width: 25%;
+}
+
+.skill {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.skill.show {
+  opacity: 1;
+  transform: translateY(0px);
 }
