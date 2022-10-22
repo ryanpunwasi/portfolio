@@ -6,6 +6,7 @@ import SectionText from "./SectionText";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
 import Skills from "./Skills";
+import ScrollAnimation from "./ScrollAnimation";
 import ContactSection from "./ContactSection";
 import "./App.css";
 
@@ -38,7 +39,10 @@ function App() {
       <Section id="skills">
         <Skills />
       </Section>
-      <Section image="/img/02.jpeg" id="sunsetImage" blendMode="normal" />
+      {/* <Section image="/img/02.jpeg" id="sunsetImage" blendMode="normal" /> */}
+      <Section>
+        <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
+      </Section>
       <Section id="projects" />
       <Section id="contact">
         <ContactSection />
