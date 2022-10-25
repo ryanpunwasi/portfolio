@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import Lead from "./Lead";
 import Skills from "./Skills";
 import ScrollAnimation from "./ScrollAnimation";
+import Projects from "./Projects";
 import ContactSection from "./ContactSection";
 import "./App.css";
 
@@ -43,7 +44,9 @@ function App() {
       <Section>
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
       </Section>
-      <Section id="projects" />
+      <Section id="projects">
+        <Projects />
+      </Section>
       <Section id="contact">
         <ContactSection />
       </Section>
