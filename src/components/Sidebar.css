@@ -31,6 +31,7 @@
   right: 0px;
   opacity: 0;
   animation: fadeOut 0.2s;
+  display: none;
 }
 
 @keyframes fadeIn {
