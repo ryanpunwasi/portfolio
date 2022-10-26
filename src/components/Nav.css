@@ -6,4 +6,5 @@
   width: 100vw;
   position: fixed;
   background-color: transparent;
+  z-index: 2;
 }
