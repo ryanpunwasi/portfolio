@@ -5,7 +5,6 @@ import Section from "./Section";
 import SectionText from "./SectionText";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
-import Skills from "./Skills";
 import ScrollAnimation from "./ScrollAnimation";
 import Projects from "./Projects";
 import ContactSection from "./ContactSection";
@@ -13,7 +12,6 @@ import "./App.css";
 
 const sections = [
   { title: "About", link: "#about" },
-  { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];
@@ -37,10 +35,6 @@ function App() {
       <Section id="about">
         <SectionText></SectionText>
       </Section>
-      <Section id="skills">
-        <Skills />
-      </Section>
-      {/* <Section image="/img/02.jpeg" id="sunsetImage" blendMode="normal" /> */}
       <Section>
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
       </Section>
