@@ -1,8 +1,27 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./ScrollAnimation.scss";
 
 function ScrollAnimation(props) {
-  const [saturation, setSaturation] = useState(0.5);
+  const [saturation, setSaturation] = useState(0);
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const windowOffset = window.scrollY;
+      const elementOffsetTop = sectionEl.current.offsetTop;
+      const elementHeight = sectionEl.current.offsetHeight;
+
+      const distance = windowOffset + windowHeight - elementOffsetTop;
+      const percentage = Math.round(
+        distance / ((windowHeight + elementHeight) / 100)
+      );
+
+      const sat = Math.min(100, Math.max(0, percentage / 100));
+      setSaturation(sat * 2);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
       style={{
@@ -13,9 +32,8 @@ function ScrollAnimation(props) {
       }}
       id={props.id}
       className="scroll"
-    >
-      {props.children}
-    </section>
+      ref={sectionEl}
+    ></section>
   );
 }
 
