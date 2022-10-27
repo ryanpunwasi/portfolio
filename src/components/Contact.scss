@@ -7,9 +7,7 @@
 
 .contact__icons img {
   height: 100px;
-  filter: brightness(0.1);
-}
-
-.contact__icons:nth-child(2) {
-  background-color: white;
+  -webkit-box-shadow: 0px 0px 36px -13px #000000;
+  box-shadow: 0px 0px 20px -13px #ececec;
+  border-radius: 50%;
 }
