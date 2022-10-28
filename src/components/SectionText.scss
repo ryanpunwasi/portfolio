@@ -9,11 +9,12 @@
 .section__text {
   font-family: "Barlow";
   font-size: 1.2em;
-  width: 70%;
+  width: 60%;
   line-height: 1.5em;
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 0.5s, transform 0.5s;
+  padding-bottom: 3em;
 }
 
 .section__text.show {
@@ -26,8 +27,13 @@
     font-size: 0.8em;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .section__text {
     font-size: 1em;
+    margin-top: 300px;
+  }
+
+  .section__text__container {
+    overflow: scroll;
   }
 }
