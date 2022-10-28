@@ -2,47 +2,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(39, 39, 39);
+
   height: 100%;
   position: relative;
 }
 
+.contact__container.off {
+  background-color: rgb(25, 25, 25);
+}
+
+.contact__container.on {
+  background-color: rgb(63, 63, 63);
+}
+
 .lightswitch {
-  position: absolute;
+  font-family: "Barlow";
+  font-size: 1.3em;
+  padding: 1em 0em;
+  text-align: center;
   display: flex;
   align-items: center;
-  padding: 3px;
+  justify-content: center;
+  position: absolute;
   top: 50px;
   left: 50px;
-  background-color: gray;
-  height: 25px;
-  width: 100px;
-  border-radius: 15px;
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
   z-index: 6;
   user-select: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  background-color: #d3d3d3;
+  box-shadow: 0 6px #777777;
+}
+
+.lightswitch:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px #777777;
+}
+
+.lightswitch.on {
+  transform: translateY(6px);
+  box-shadow: 0 2px #777777;
 }
 
 .lightswitch:hover {
   cursor: pointer;
 }
 
-.switch {
-  position: absolute;
-  background-color: rgb(217, 217, 217);
-  height: 20px;
-  width: 50px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 0.8em;
-  font-family: "Barlow";
-  transform: translateX(0px);
-  transition: transform 0.2 ease-in-out;
-}
-
-.switch.on {
-  transform: translateX(calc(50px - 6px));
-  transition: transform 0.2s ease-in-out;
+.lightswitch.on:hover {
+  cursor: default;
 }
