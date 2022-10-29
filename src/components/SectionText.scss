@@ -8,7 +8,7 @@
 
 .section__text {
   font-family: "Barlow";
-  font-size: 1.2em;
+  font-size: 1em;
   width: 60%;
   line-height: 1.5em;
   opacity: 0;
@@ -29,7 +29,7 @@
 }
 @media only screen and (max-width: 768px) {
   .section__text {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 300px;
   }
 
