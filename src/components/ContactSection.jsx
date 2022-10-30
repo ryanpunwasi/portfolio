@@ -10,6 +10,7 @@ const ContactSection = () => {
 
   const turnOnLights = () => {
     if (!lights) {
+      audioEl.current.volume = 0.5;
       audioEl.current.play();
       setLights(true);
     }

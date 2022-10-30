@@ -28,7 +28,6 @@
   left: 50px;
   height: 50px;
   width: 70px;
-  border-radius: 5px;
   z-index: 6;
   user-select: none;
   text-decoration: none;
@@ -36,17 +35,17 @@
   border: none;
 
   background-color: #d3d3d3;
-  box-shadow: 0 6px #777777;
+  box-shadow: 0 8px #777777;
 }
 
 .lightswitch:active {
   transform: translateY(6px);
-  box-shadow: 0 2px #777777;
+  box-shadow: 0 3px #777777;
 }
 
 .lightswitch.on {
   transform: translateY(6px);
-  box-shadow: 0 2px #777777;
+  box-shadow: 0 3px #777777;
 }
 
 .lightswitch:hover {
