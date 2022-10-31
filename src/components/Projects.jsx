@@ -8,8 +8,19 @@ const Projects = props => {
   const [selectedProject, setSelectedProject] = useState(null);
   return (
     <div className="projects">
-      {tab === "list" && <ProjectListTab />}
-      {tab === "project" && <ProjectTab project={selectedProject} />}
+      {tab === "list" && (
+        <ProjectListTab
+          setTab={setTab}
+          setSelectedProject={setSelectedProject}
+        />
+      )}
+      {tab === "project" && (
+        <ProjectTab
+          setTab={setTab}
+          selectedProject={selectedProject}
+          setSelectedProject={setSelectedProject}
+        />
+      )}
     </div>
   );
 };
