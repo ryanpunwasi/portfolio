@@ -35,7 +35,7 @@ const SectionText = function () {
         skills to build impactful software.
         <br />
         <br />
-        Aside from programming, I'm interested filmmaking/photography and
+        Aside from programming, I'm interested in filmmaking/photography and
         sports. I'm always learning about cinematography, video editing, and
         composition with the goal of producing my own content in the future.
         When it comes to sports, I'm a big NBA and NFL fan who enjoys learning
@@ -44,8 +44,8 @@ const SectionText = function () {
         <br />
         To create this website, I used HTML5, CSS3, and React. I took the
         opportunity to learn about and implement various web-related features
-        including CSS transitions/animations, the Intersection Observer API, and
-        the scroll event. I also took the photos! 📸
+        including CSS transitions, animations, the Intersection Observer API,
+        and the scroll event. I also took the photos! 📸
       </p>
     </div>
   );
