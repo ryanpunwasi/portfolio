@@ -14,6 +14,9 @@ const Contact = ({ lights }) => {
           <span id="twitter">
             <img src="/img/twitter.png" alt="twitter" />
           </span>
+          <span id="creddle">
+            <img src="/img/cv.png" alt="cv" />
+          </span>
         </div>
       )}
       {lights && (
@@ -35,12 +38,20 @@ const Contact = ({ lights }) => {
             <img src="/img/github.png" alt="github" className="light" />
           </a>
           <a
-            href="https:www.twitter.com/RyanPunwasi"
+            href="https://www.twitter.com/RyanPunwasi"
             target="_blank"
             rel="noreferrer"
             id="twitter"
           >
             <img src="/img/twitter.png" alt="twitter" className="light" />
+          </a>
+          <a
+            href="https://resume.creddle.io/resume/cz0ik4eo5qh"
+            target="_blank"
+            rel="noreferrer"
+            id="creddle"
+          >
+            <img src="/img/cv.png" alt="cv" className="light" />
           </a>
         </div>
       )}

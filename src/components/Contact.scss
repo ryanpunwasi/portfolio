@@ -16,3 +16,9 @@
 .contact__icons img.light {
   filter: brightness(1);
 }
+
+.contact__icons img.light:hover {
+  filter: brightness(1);
+  transform: translateY(-20px) scale(1.2);
+  transition: transform 0.1s ease-in;
+}
