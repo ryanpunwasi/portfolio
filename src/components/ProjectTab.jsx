@@ -11,7 +11,7 @@ const ProjectTab = ({ selectedProject, setTab, setSelectedProject }) => {
         <i className="fa-solid fa-arrow-left"></i>
       </button>
       <div className="project__info">
-        <img src="/img/github.png" />
+        <img src={`/img/${selectedProject.icon}`} alt="thumbnail" />
         <div>
           <h6>{selectedProject.name}</h6>
           <p>{selectedProject.desc}</p>

@@ -14,7 +14,7 @@ const Projects = props => {
       desc: "A single-page web application that helps in the memorization of the names and symbols of the elements of the periodic table.",
       repo: "https://github.com/ryanpunwasi/valentnost",
       liveSite: "https://valentnost.app",
-      icon: "",
+      icon: "science.svg",
       stack: ["HTML", "CSS", "React", "Redux"],
     },
     {
@@ -23,7 +23,7 @@ const Projects = props => {
       desc: "A single-page web application where users can practice identifying notes, octaves, chords, and scales by sound.",
       repo: "https://github.com/ryanpunwasi/semitone",
       liveSite: "https://semitone.io",
-      icon: "",
+      icon: "piano-2.svg",
       stack: ["HTML5", "CSS3", "Bootstrap 5", "React", "Redux"],
     },
     {
@@ -32,7 +32,7 @@ const Projects = props => {
       desc: "A website displaying my portfolio of projects",
       repo: "https://github.com/ryanpunwasi/portfolio",
       liveSite: "https://semitone.io",
-      icon: "",
+      icon: "palette.svg",
       stack: ["HTML5", "CSS3", "React"],
     },
     {
@@ -41,7 +41,7 @@ const Projects = props => {
       desc: "A web app where users can practice buying and selling stocks ",
       repo: "https://github.com/ryanpunwasi/semitone",
       liveSite: null,
-      icon: "",
+      icon: "investment.svg",
       stack: ["HTML5", "CSS3", "Bootstrap 5", "React", "Redux"],
     },
     {
@@ -50,7 +50,7 @@ const Projects = props => {
       desc: "A web app where users can practice identifying notes, octaves, chords, and scales by sound",
       repo: "https://github.com/ryanpunwasi/semitone",
       liveSite: null,
-      icon: "",
+      icon: "push-pin.svg",
       stack: ["HTML5", "CSS3", "Bootstrap 5", "React", "Redux"],
     },
   ];
