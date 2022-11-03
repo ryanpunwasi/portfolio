@@ -1,13 +1,13 @@
 import "./ProjectListTabItem.scss";
 
-const ProjectListTabItem = function ({ name, setSelectedProject, setTab }) {
+const ProjectListTabItem = function ({ project, setSelectedProject, setTab }) {
   const onClick = () => {
-    setSelectedProject(name);
+    setSelectedProject(project);
     setTab("project");
   };
   return (
     <article className="project__item" onClick={onClick}>
-      {name}
+      {project.name}
     </article>
   );
 };
