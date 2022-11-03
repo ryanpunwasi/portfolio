@@ -1,3 +1,30 @@
+.project__tab {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  font-family: "Barlow";
+}
+
+.project__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+  height: 100%;
+  border: 1px solid black;
+
+  img {
+    width: 100px;
+    border: 1px slateblue solid;
+  }
+
+  div {
+    width: 50%;
+    border: 1px slateblue solid;
+  }
+}
+
 .project__back {
   display: flex;
   justify-content: center;
@@ -11,9 +38,11 @@
   height: 3em;
   border: none;
   margin-left: 1em;
+  z-index: 10;
 }
 
 .project__back:hover {
   background-color: rgb(234, 234, 234);
+  transition: background-color 0.2s ease-out;
   cursor: pointer;
 }
