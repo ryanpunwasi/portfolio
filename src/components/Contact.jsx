@@ -15,7 +15,7 @@ const Contact = ({ lights }) => {
             <img src="/img/twitter.png" alt="twitter" />
           </span>
           <span id="creddle">
-            <img src="/img/cv.png" alt="cv" />
+            <img src="/img/diploma-2.svg" alt="cv" />
           </span>
         </div>
       )}
@@ -51,7 +51,7 @@ const Contact = ({ lights }) => {
             rel="noreferrer"
             id="creddle"
           >
-            <img src="/img/cv.png" alt="cv" className="light" />
+            <img src="/img/diploma-2.svg" alt="cv" className="light" />
           </a>
         </div>
       )}
