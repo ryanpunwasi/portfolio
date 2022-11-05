@@ -1,3 +1,4 @@
+import TechStack from "./TechStack";
 import "./ProjectTab.scss";
 
 const ProjectTab = ({ selectedProject, setTab, setSelectedProject }) => {
@@ -13,10 +14,12 @@ const ProjectTab = ({ selectedProject, setTab, setSelectedProject }) => {
       <div className="project__info">
         <img src={`/img/${selectedProject.icon}`} alt="thumbnail" />
         <div>
-          <h6>{selectedProject.name}</h6>
-          <p>{selectedProject.desc}</p>
+          <h5>{selectedProject.name}</h5>
+          <p className="project__desc">{selectedProject.desc}</p>
+          <p className="project__text">{selectedProject.text}</p>
+          <TechStack stack={selectedProject.stack} />
 
-          <div>
+          <div className="project__links">
             <a href={selectedProject.repo} target="_blank" rel="noreferrer">
               Repo
             </a>
