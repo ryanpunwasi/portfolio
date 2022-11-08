@@ -34,7 +34,7 @@ const Projects = () => {
       desc: "A website displaying my portfolio of personal projects",
       text: "My portfolio website was made to give prospective employers a quick insight into who I am, what I have been working on, as well as access to all my relevant links. I took the opportunity to have some fun and learn about various web-related features including CSS transitions, animations, and the Intersection Observer API. Hopefully, you were able to learn a little bit about me!",
       repo: "https://github.com/ryanpunwasi/portfolio",
-      liveSite: "http://localhost:3000",
+      liveSite: "https://rpunwasi.com",
       icon: "palette.svg",
       stack: ["HTML5", "CSS3", "React"],
     },
