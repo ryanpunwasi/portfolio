@@ -18,7 +18,7 @@ function ScrollAnimation(props) {
       );
 
       const sat = Math.min(100, Math.max(0, percentage / 100));
-      setSaturation(sat * 2);
+      setSaturation(sat * 4);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -28,6 +28,7 @@ function ScrollAnimation(props) {
         backgroundImage: `url('${props.image}')`,
         backgroundSize: "100% 100%",
         backgroundBlendMode: `${props.blendMode || "multiply"}`,
+        backgroundAttachment: "fixed",
         filter: `saturate(${saturation})`,
       }}
       id={props.id}
