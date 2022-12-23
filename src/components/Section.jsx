@@ -8,6 +8,7 @@ function Section(props) {
           backgroundImage: `url('${props.image}')`,
           backgroundSize: "100% 100%",
           backgroundBlendMode: `${props.blendMode || "multiply"}`,
+          backgroundAttachment: "fixed",
         }}
         className={styles.section}
         id={props.id}
