@@ -10,13 +10,15 @@ function Sidebar({ items }) {
   ));
 
   return (
-    <div
-      className={`sidebar ${
-        sidebarOpen === null ? "none" : sidebarOpen ? "open" : "closed"
-      }`}
-    >
-      <ul>{renderItems}</ul>
-    </div>
+    <>
+      <div
+        className={`sidebar ${
+          sidebarOpen === null ? "none" : sidebarOpen ? "open" : "closed"
+        }`}
+      >
+        <ul>{renderItems}</ul>
+      </div>
+    </>
   );
 }
 
