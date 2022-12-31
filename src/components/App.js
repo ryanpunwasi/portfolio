@@ -35,15 +35,6 @@ function App() {
       <Section id="about">
         <SectionText></SectionText>
       </Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
-      <Section></Section>
       <Section>
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
       </Section>
