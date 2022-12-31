@@ -5,7 +5,8 @@
   align-items: center;
   position: fixed;
   border: none;
-  min-width: 15vw;
+  width: 15vw;
+  min-width: 200px;
   top: 100px;
   right: 30px;
   z-index: 2;
