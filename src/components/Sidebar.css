@@ -69,7 +69,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    right: 0px;
+    right: -10px;
   }
   100% {
     opacity: 1;
@@ -84,14 +84,19 @@
   }
   100% {
     opacity: 0;
-    right: 0px;
+    right: -10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .sidebar {
     width: calc(90vw - 30px);
-    mix-blend-mode: normal;
+    box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
+  }
+
+  .sidebar-contact {
     box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 7px 23px -5px rgba(0, 0, 0, 0.75);
