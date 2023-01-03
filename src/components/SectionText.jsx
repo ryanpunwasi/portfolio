@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./SectionText.scss";
 const SectionText = function (props) {
   const [show, setShow] = useState(false);
+  const textEl = useRef(null);
   useEffect(() => {
-    let targets = document.querySelectorAll(".section__text");
-
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -20,12 +19,13 @@ const SectionText = function (props) {
       }
     );
 
-    targets.forEach(target => observer.observe(target));
+    observer.observe(textEl.current);
   });
 
   return (
     <div className="section__text__container">
       <p
+        ref={textEl}
         className={`section__text ${show ? "show" : ""} ${
           props.fadeDirection === "right" ? props.fadeDirection : "left"
         }`}
