@@ -33,7 +33,7 @@ function App() {
         <Lead />
       </Section>
       <Section id="about">
-        <SectionText></SectionText>
+        <SectionText fadeDirection="right"></SectionText>
       </Section>
       <Section>
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />

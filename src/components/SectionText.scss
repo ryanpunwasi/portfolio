@@ -12,9 +12,17 @@
   width: 60%;
   line-height: 1.5em;
   opacity: 0;
-  transform: translateX(100px);
+
   transition: opacity 0.5s, transform 0.5s;
   padding-bottom: 3em;
+}
+
+.section__text.right {
+  transform: translateX(-100px);
+}
+
+.section__text.left {
+  transform: translateX(100px);
 }
 
 .section__text.show {

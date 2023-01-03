@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./SectionText.scss";
-const SectionText = function () {
+const SectionText = function (props) {
   const [show, setShow] = useState(false);
   useEffect(() => {
     let targets = document.querySelectorAll(".section__text");
@@ -25,7 +25,11 @@ const SectionText = function () {
 
   return (
     <div className="section__text__container">
-      <p className={`section__text ${show ? "show" : ""}`}>
+      <p
+        className={`section__text ${show ? "show" : ""} ${
+          props.fadeDirection === "right" ? props.fadeDirection : "left"
+        }`}
+      >
         I am a full-stack web developer with a passion for creating applications
         with engaging and intuitive user interfaces. I have a background in
         nursing, which has fostered my sense of resilience and problem-solving.
