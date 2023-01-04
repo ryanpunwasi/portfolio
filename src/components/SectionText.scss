@@ -1,31 +1,46 @@
 .section__text__container {
   display: flex;
+  gap: 1em;
   justify-content: center;
   align-items: center;
   background-color: white;
   height: 100%;
+  width: 100vw;
+  opacity: 0;
+  transition: opacity 0.8s, transform 0.4s;
+}
+
+.text__image {
+  width: 80px;
+  display: block;
+}
+
+.section__text__title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  letter-spacing: 2px;
 }
 
 .section__text {
   font-family: "Barlow";
-  font-size: 1em;
-  width: 60%;
-  line-height: 1.5em;
-  opacity: 0;
+  font-size: 1.2em;
+  width: 50vw;
+  line-height: 2em;
 
-  transition: opacity 0.5s, transform 0.5s;
-  padding-bottom: 3em;
+  margin: 4em;
 }
 
-.section__text.right {
+.section__text__container.right {
   transform: translateX(-100px);
+  flex-direction: row-reverse;
 }
 
-.section__text.left {
+.section__text__container.left {
   transform: translateX(100px);
 }
 
-.section__text.show {
+.section__text__container.show {
   opacity: 1;
   transform: translateX(0px);
 }
@@ -39,9 +54,5 @@
   .section__text {
     font-size: 0.9em;
     margin-top: 300px;
-  }
-
-  .section__text__container {
-    overflow: scroll;
   }
 }

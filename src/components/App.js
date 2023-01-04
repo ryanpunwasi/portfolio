@@ -3,6 +3,7 @@ import { SidebarContext } from "../contexts/SidebarContext";
 import Nav from "./Nav";
 import Section from "./Section";
 import SectionText from "./SectionText";
+import ScrollTextSection from "./ScrollTextSection";
 import Sidebar from "./Sidebar";
 import Lead from "./Lead";
 import ScrollAnimation from "./ScrollAnimation";
@@ -32,9 +33,48 @@ function App() {
       <Section image="/img/03.jpg">
         <Lead />
       </Section>
-      <Section id="about">
-        <SectionText fadeDirection="right"></SectionText>
-      </Section>
+      <ScrollTextSection id="about">
+        <SectionText fadeDirection="right" image="pen.svg" title="TL;DR">
+          I am a full-stack web developer with a passion for creating
+          easy-to-use applications with engaging user interfaces. I hold a
+          Bachelor's of Science in Nursing from Toronto Metropolitan University
+          and a Diploma of Web Development from Lighthouse Labs. I'm an avid
+          learner, leveraging my curiosity and enthusiasm to gain as much
+          knowledge as I can about software development, film, and sports.
+        </SectionText>
+        <SectionText
+          fadeDirection="left"
+          image="monitor.svg"
+          title="Software Development"
+        >
+          Aside from programming, I'm interested in filmmaking/photography and
+          sports. I'm always learning about cinematography, video editing, and
+          composition with the goal of producing my own content in the future.
+          When it comes to sports, I'm a big NBA and NFL fan who enjoys learning
+          about the strategic and analytic side of sports.
+        </SectionText>
+        <SectionText
+          fadeDirection="right"
+          image="photo-camera.svg"
+          title="Filmmaking"
+        >
+          Film is a powerful medium. Whether you're watching you, the idea is
+          the same, to experience the world through the eyes of someone else.
+          I'm a lover of movies and I like to spend my spare time learning about
+          the fundamentals of film production, specifically cinematography,
+          video editing, and screenwriting. I use books, as well as online
+          videos and courses to learn about different camera shots, video
+          editing techniques and story-telling concepts.
+        </SectionText>
+        <SectionText
+          fadeDirection="left"
+          image="basketball-jersey.svg"
+          title="Sports"
+        >
+          When it comes to sports, I'm a big NBA and NFL fan who enjoys learning
+          about the strategic and analytic side of sports.
+        </SectionText>
+      </ScrollTextSection>
       <Section>
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
       </Section>
