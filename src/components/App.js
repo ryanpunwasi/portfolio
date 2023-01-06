@@ -55,7 +55,7 @@ function App() {
           software industry so I enrolled in a coding bootcamp. I had the
           opportunity to pick up valuable skills like full-stack web
           development, version control, object-oriented programming, database
-          design, and software testing. I've worked extensively with Javascript
+          design, and software testing. I've worked extensively with Javascript,
           building user interfaces and REST APIs. I'm looking to secure a role
           where I can grow as a developer and put my skills to the test.
         </SectionText>
