@@ -15,7 +15,7 @@ const SectionText = function (props) {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.3,
         rootMargin: "-100px",
       }
     );
