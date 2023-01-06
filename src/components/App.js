@@ -58,13 +58,15 @@ function App() {
           image="photo-camera.svg"
           title="Filmmaking"
         >
-          Film is a powerful medium. Whether you're watching you, the idea is
-          the same, to experience the world through the eyes of someone else.
-          I'm a lover of movies and I like to spend my spare time learning about
-          the fundamentals of film production, specifically cinematography,
-          video editing, and screenwriting. I use books, as well as online
-          videos and courses to learn about different camera shots, video
-          editing techniques and story-telling concepts.
+          As a medium, film is as powerful as it is complex. It is incredibly
+          collaborative, making use of visuals, sound, acting, effects, edting,
+          sets and costumes. It gives viewers insight into the perspectives and
+          experiences of others. For these reasons, I am a lover of film and I
+          like to spend my spare time learning about the fundamentals of film
+          production&mdash;specifically cinematography, video editing, and
+          screenwriting. I use books, as well as online videos and courses to
+          learn about different camera shots, video editing techniques and
+          story-telling concepts.
         </SectionText>
         <SectionText
           fadeDirection="left"
