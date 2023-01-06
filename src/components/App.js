@@ -47,11 +47,17 @@ function App() {
           image="monitor.svg"
           title="Software Development"
         >
-          Aside from programming, I'm interested in filmmaking/photography and
-          sports. I'm always learning about cinematography, video editing, and
-          composition with the goal of producing my own content in the future.
-          When it comes to sports, I'm a big NBA and NFL fan who enjoys learning
-          about the strategic and analytic side of sports.
+          My fascination with software began while I was in university. I was
+          intrigued by how code could be used to build elaborate products like
+          social media platforms, video games, and operating systems. I began
+          learning how to program websites in my spare time using any resources
+          I could find. In 2022, I knew I wanted to pursue a career in the
+          software industry so I enrolled in a coding bootcamp. I had the
+          opportunity to pick up valuable skills like full-stack web
+          development, version control, object-oriented programming, database
+          design, and software testing. I've worked extensively with Javascript
+          building user interfaces and REST APIs. I'm looking to secure a role
+          where I can grow as a developer and put my skills to the test.
         </SectionText>
         <SectionText
           fadeDirection="right"
