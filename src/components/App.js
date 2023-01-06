@@ -73,8 +73,11 @@ function App() {
           image="basketball-jersey.svg"
           title="Sports"
         >
-          When it comes to sports, I'm a big NBA and NFL fan who enjoys learning
-          about the strategic and analytic side of sports.
+          I'm a big sports fan (NBA 🏀 and NFL 🏈). What interests me most about
+          sports is the team dynamic, strategy and analytics that goes into
+          being a contender in very competitive leagues. When I'm not busy, I'm
+          usually watching the game, looking at metrics, or listening my
+          favourite sports analytics podcasts.
         </SectionText>
       </ScrollTextSection>
       <Section>
