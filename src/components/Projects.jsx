@@ -63,7 +63,7 @@ const Projects = () => {
       repo: "https://github.com/ryanpunwasi/pinnet",
       text: "Pinnet was made with two other collaborators for a mid-term project at Lighthouse Lab's Web Development Bootcamp. I did work on both the front-end and back-end, implementing features like authentication and the ability to browse, create and favourite maps. I had the chance to write complex SQL queries, create interactive maps with Leaflet, work with promises, and write endpoints with Express.",
       liveSite: null,
-      icon: "push-pin.svg",
+      icon: "pin.svg",
       stack: [
         "HTML5",
         "Sass",

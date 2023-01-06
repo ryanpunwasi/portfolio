@@ -1,39 +1,71 @@
 .section__text__container {
   display: flex;
-  justify-content: center;
+  gap: 1em;
   align-items: center;
   background-color: white;
   height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s, transform 0.4s;
+}
+
+.text__image {
+  width: 80px;
+  display: block;
+}
+
+.section__text__title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  letter-spacing: 2px;
 }
 
 .section__text {
   font-family: "Barlow";
-  font-size: 1em;
-  width: 60%;
-  line-height: 1.5em;
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.5s, transform 0.5s;
-  padding-bottom: 3em;
+  font-size: 1.2em;
+  width: 50vw;
+  line-height: 2em;
+
+  margin: 4em;
 }
 
-.section__text.show {
+.section__text__container.right {
+  transform: translateX(-100px);
+  flex-direction: row-reverse;
+  justify-self: end;
+}
+
+.section__text__container.left {
+  transform: translateX(100px);
+  justify-self: start;
+}
+
+.section__text__container.show {
   opacity: 1;
   transform: translateX(0px);
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
+  .section__text__container {
+    width: 100vw;
+  }
   .section__text {
     font-size: 0.8em;
   }
+
+  .section__text__container.right,
+  .section__text__container.left {
+    justify-self: center;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .section__text {
     font-size: 0.9em;
-    margin-top: 300px;
   }
 
-  .section__text__container {
-    overflow: scroll;
+  .text__image {
+    width: 40px;
   }
 }
