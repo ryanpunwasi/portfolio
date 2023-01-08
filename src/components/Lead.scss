@@ -66,3 +66,17 @@
     transform: translateY(0rem);
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .lead {
+    flex-direction: column;
+  }
+
+  .lead__text {
+    text-align: center;
+  }
+
+  .scrolling-words-container {
+    margin-top: 2em;
+  }
+}
