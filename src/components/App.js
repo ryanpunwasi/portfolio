@@ -96,9 +96,11 @@ function App() {
       <Section id="contact">
         <ContactSection />
       </Section>
-      <Section>
-        <Credits />
-      </Section>
+      {false && (
+        <Section>
+          <Credits />
+        </Section>
+      )}
     </>
   );
 }
