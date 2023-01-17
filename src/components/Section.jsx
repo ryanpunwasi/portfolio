@@ -18,9 +18,9 @@ function Section(props) {
     );
   }
   return (
-    <div id={props.id} className={styles.section}>
+    <section id={props.id} className={styles.section}>
       {props.children}
-    </div>
+    </section>
   );
 }
 

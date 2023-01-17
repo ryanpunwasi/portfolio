@@ -8,6 +8,7 @@ import Sidebar from "./Sidebar";
 import Lead from "./Lead";
 import ScrollAnimation from "./ScrollAnimation";
 import Projects from "./Projects";
+import Credits from "./Credits";
 import ContactSection from "./ContactSection";
 import "./App.css";
 
@@ -95,6 +96,11 @@ function App() {
       <Section id="contact">
         <ContactSection />
       </Section>
+      {false && (
+        <Section>
+          <Credits />
+        </Section>
+      )}
     </>
   );
 }
