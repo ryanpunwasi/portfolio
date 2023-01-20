@@ -66,7 +66,7 @@ function App() {
           title="Filmmaking"
         >
           As a medium, film is as powerful as it is complex. It is incredibly
-          collaborative, making use of visuals, sound, acting, effects, edting,
+          collaborative, making use of visuals, sound, acting, effects, editing,
           sets and costumes. It gives viewers insight into the perspectives and
           experiences of others. For these reasons, I am a lover of film and I
           like to spend my spare time learning about the fundamentals of film
