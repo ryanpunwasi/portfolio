@@ -91,7 +91,9 @@ function App() {
         <ScrollAnimation image="/img/02.jpeg" id="sunsetImage2" />
       </Section>
       <Section id="projects">
-        <Projects />
+        <ScrollTextSection>
+          <h2 className="portfolio-header">Projects</h2>
+        </ScrollTextSection>
       </Section>
       <Section id="contact">
         <ContactSection />
