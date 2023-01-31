@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import TechStack from "./TechStack";
-import "./ProjectTab.scss";
+import "./Project.scss";
 
-const Project = ({ project }) => {
+const Project = ({ project, fadeDirection }) => {
   const [show, setShow] = useState(false);
   const projectEl = useRef(null);
   useEffect(() => {
@@ -25,7 +25,12 @@ const Project = ({ project }) => {
     observer.observe(projectEl.current);
   });
   return (
-    <div className={`project__tab ${show ? "show" : ""}`} ref={projectEl}>
+    <div
+      className={`project__tab ${show ? "show" : ""} ${
+        fadeDirection === "right" ? fadeDirection : "left"
+      }`}
+      ref={projectEl}
+    >
       <div className="project__info">
         <img src={`/img/${project.icon}`} alt="thumbnail" />
         <div>

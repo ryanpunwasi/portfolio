@@ -164,11 +164,11 @@ function App() {
 
       <ScrollTextSection>
         <h2 className="portfolio-header">Projects</h2>
-        <Project project={projects[0]} />
-        <Project project={projects[1]} />
-        <Project project={projects[2]} />
-        <Project project={projects[3]} />
-        <Project project={projects[4]} />
+        <Project project={projects[0]} fadeDirection="left" />
+        <Project project={projects[1]} fadeDirection="right" />
+        <Project project={projects[2]} fadeDirection="left" />
+        <Project project={projects[3]} fadeDirection="right" />
+        <Project project={projects[4]} fadeDirection="left" />
       </ScrollTextSection>
 
       <Section id="contact">
